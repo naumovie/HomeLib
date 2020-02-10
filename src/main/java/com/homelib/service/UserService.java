@@ -117,6 +117,6 @@ public class UserService implements UserDetailsService {
 
 
     public Iterable<Book> getUserBook(User user) {
-        return bookRepo.findAll();
+        return user.getAddedBooks();
     }
 }
