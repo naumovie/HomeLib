@@ -131,7 +131,9 @@ public class BookService {
 
     @Transactional
     public void addToUser(User user,Book book) {
-        user.getAddedBooks().add(book);
+        if (!user.getAddedBooks().contains(book)) {
+            user.getAddedBooks().add(book);
+        }
         userRepo.save(user);
     }
 }
