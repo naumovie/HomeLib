@@ -31,7 +31,12 @@
                 </div>
                 </#if>
 
-                
+                <div class="col mt-2">
+                    <button class="btn btn-success" >
+
+                        <a href="add/${book.id}">Add book</a>
+                    </button>
+                </div>
 
             </div>
         </div>
